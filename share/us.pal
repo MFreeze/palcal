@@ -1,0 +1,40 @@
+# This calendar is a slightly modified version of the calendars
+# distributed in OpenBSD and FreeBSD.
+#
+# Original versions of these calendars can be found at:
+#
+# http://bsdcalendar.sf.net/
+# http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/calendar/calendars/
+#
+
+
+US USA
+00000101 New Year's Day
+00000202 Groundhog Day
+00000212 Lincoln's Birthday
+00000214 Valentine's Day
+00000222 Washington's Birthday (traditional)
+00000229 Leap Day
+00000317 St. Patrick's Day
+00000401 April Fool's Day
+00000415 Federal income taxes due (if weekend, they're due on Monday)
+00000422 Earth Day
+00000614 Flag Day
+00000704 Independence Day
+00001012 Columbus Day (traditional)
+00001111 Veterans' Day
+00001224 Christmas Eve
+00001225 Christmas Day
+00001231 New Year's Eve
+*0132 Martin Luther King's birthday
+*0232 President's Day
+*0232 Washington's birthday
+*0321 Daylight Saving Time begins --- move clocks forward
+*0521 Mother's Day
+*0537 Armed Forces Day
+*05L2 Memorial Day
+*0631 Father's Day
+*0912 Labor Day
+*1022 Columbus Day
+*1111 Daylight Saving Time ends --- move clocks back
+*1145 Thanksgiving Day

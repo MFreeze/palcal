@@ -1,0 +1,87 @@
+This document describes how you can translate pal into other languages.
+
+NOTE: Some parts of pal rely on other libraries already have different
+translations available.  If pal isn't translated to your language, a
+few parts of it, such as the names of the months, will be translated.
+
+If you have any questions about this document or if you find a mistake
+in it, please email the palcal-devel mailing list (for more
+information, see http://palcal.sourceforge.net/).
+
+
+0) Create po/pal.pot by running "make pot" while in /src
+
+
+1) Look for a file named "language_COUNTRY.po" in this directory,
+   where "language" is the two character code for your language and
+   "COUNTRY" is the two character code for your country.  If you don't
+   want to make a country specific translation, just use
+   "language.po".
+
+   1a) If this file does not exist, create it by copying "pal.pot" to
+      "language_COUNTRY.po".
+
+   1b) If the file already exists, run the command:
+
+       	  msgmerge language_COUNTRY.po pal.pot > language_COUNTRY.po.NEW
+	  mv language_COUNTRY.po.NEW language_COUNTRY.po
+
+       This command will merge any updated strings that need to be
+       translated in pal.pot into language_COUNTRY.po.
+
+
+2) Add translations for as many of the strings as possible.  The
+   original strings are labeled "msgid".  The string to be translated
+   is labeled "msgstr".  Duplicate the formatting strings (such as %s)
+   in your translated strings.  Try to duplicate any spacing in your
+   translated strings as well.
+
+
+3) If you didn't create a new language_COUNTRY.po file, also look for
+   translated strings that are marked "fuzzy".  If the translation for
+   a "fuzzy" string is good, remove the "fuzzy" label from it.  If the
+   translation is bad, fix it and remove the "fuzzy" label from it.
+
+
+4) Update the header for the po file where appropriate:
+
+   4a) Remove the "fuzzy" label before the header.
+   4b) Update "PO-Revision-Date" with the date you edited the file.
+   4c) Update "Last-Translator" with your name and email address.
+   4d) Update "Language-Team" with:
+          LANGUAGE => Full name of language for translation
+          LL => Language code
+   4e) Update "Content-Type" with charset=UTF-8
+   4f) If it exists, replace this line:
+       	  # Copyright (C) YEAR Scott Kuhl
+       with
+          # Copyright (C) CURRENT_YEAR YOUR NAME
+       If the line does not exist, add a new copyright line under the
+       copyright line that is already there.
+
+
+5) CHECK your po file with this command and fix any problems:
+      msgfmt -c --statistics language_COUNTRY.po
+
+
+6) TEST.  You can test your translation by running the following
+   command as root (depending on your distribution, you might need to
+   replace /usr with /usr/local in the commands below):
+
+       mkdir -p /usr/share/locale/language_COUNTRY/LC_MESSAGES/
+       msgfmt language_COUNTRY.po -o /usr/share/locale/language_COUNTRY/LC_MESSAGES/pal.mo
+
+   For both of the commands above, you will need to replace
+   language_COUNTRY with your locale code.  You do not need to run the
+   first command if the directory already exists.
+
+   Then, you should be able to run "LC_ALL=language_COUNTRY pal" to
+   test your translation.
+
+
+7) SUBMIT.  Run "gzip language_COUNTRY.po" and attach your
+   language_COUNTRY.po.gz file to an email to the palcal-devel mailing
+   list (information about this mailing list can be found on pal's
+   website, http://palcal.sourceforge.net/).  Your translation will
+   likely be added to the next release of pal.
+

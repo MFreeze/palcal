@@ -1,0 +1,70 @@
+# This calendar is a slightly modified version of the calendars
+# distributed in OpenBSD and FreeBSD.
+#
+# Original versions of these calendars can be found at:
+#
+# http://bsdcalendar.sf.net/
+# http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/calendar/calendars/
+#
+
+
+PA Pagan
+00000102 Frigg's Distaff
+00000106 Celtic day of the Three-Fold Goddess
+00000110 Geraints Day
+00000113 Midvintersblot
+00000120 Midvintersblot
+00000122 Festival of the Muses
+00000125 Old Disting Feast
+*01L3 Upelly - old fire festival
+00000131 Honoring the Valkyries
+00000202 1st Cross-Quarter Day
+00000202 Imbolg / Imbolc (other Celtic names) / Brighid / Oimelc
+00000211 The Day the Birds Begin to Sing
+00000214 Festival of Vali
+00000302 Day of the Crows
+00000313 Burgsonndeg - festival of rebirth of the sun and the approach of spring
+00000317 Celebration of Trefuilnid Treochar (St.Patrick's day)
+00000318 Sheela's Day
+00000319 1st Quarter Day - Spring (Vernal) Equinox
+00000320 Festival of Iduna
+00000321 Ostara / Eostre (Saxon goddess of Spring)
+00000430 May Eve / Walpurgisnacht (witches' Sabbath) / Walpurgis Night (after St. Walpurga)
+00000501 May Day / Beltane / Bealtaine - Celtic bonfire festival
+00000504 2nd Cross-Quarter Day
+00000512 The Cat Parade
+00000514 Midnight Sun Festival
+00000518 Festival of the Horned God Cennunos
+00000520 Festival of Mjollnir, Thor's Hammer
+00000524 Mother's Day, in celebration of the Triple Goddes
+00000620 2nd Quarter Day - Summer Solstice
+00000621 Litha (Norse/Anglo-Saxon for "longest day")
+00000623 St. John's Eve - European Midsummer celebration
+00000801 Lugnasad / Lughnasada / Lunasa - Gaelic summer "games of Lug" (sun-god)
+00000802 Lady Godiva Day
+00000804 Loch mo Naire
+00000805 3rd Cross-Quarter Day
+00000810 Puck Faire
+00000814 Day of the Burryma
+00000817 Odin's Ordeal
+00000823 Feast of Ilmatar
+00000828 Frey Faxi
+00000829 Festival of Urda
+00000921 3rd Quarter Day - Fall (Autumnal) Equinox
+00001008 Day of Remembrance for Erik the Red
+00001009 Leif Erikson Day
+00001011 Old Lady of the Trees
+00001014 Winter Nights - festival celebrating the harvest
+00001018 Great Horn Faire
+00001024 Feast of the Spirits of the Air
+00001027 Allan Apple Day
+00001031 Hallowmas / Allhallowmas / Allhallows
+00001101 Samhain - Celtic feast of departing Sun & new year
+00001105 4th Cross-Quarter Day
+00001206 Festival of Nicolas, an aspect of Odin, leader of the hunt
+00001209 Yule Cleansing - The Danish fetch water for brewing the Yule-Ale
+00001213 Wodan's Jag - the Wild Hunt of Odin and his Army
+00001218 Festival of Epona
+00001220 4th Quarter Day - Winter Solstice
+00001221 Festival of Beiwe / Nertha / Alban Athuan
+00001221 Yule (Norse for "wheel") - Germanic 12-day feast

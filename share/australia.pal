@@ -1,0 +1,52 @@
+# This calendar is a slightly modified version of the calendars
+# distributed in OpenBSD and FreeBSD.
+#
+# Original versions of these calendars can be found at:
+#
+# http://bsdcalendar.sf.net/
+# http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/calendar/calendars/
+#
+
+
+AU Australia
+# Australias
+00000128 Australia Day Holiday (Australia, except NSW, Vic)
+00000610 Queen's Birthday Holiday (Australia, except WA)
+
+# ACT, NSW, common
+00000318 Canberra Day (ACT)
+*0812 Bank Holiday (ACT, NSW)
+*1012 Labour Day (ACT, NSW, SA)
+
+# victoria
+*0322 Labour Day (Vic)
+*1113 Melbourne Cup (Vic)
+
+# tasmania
+00000211 Regatta Day (Tas)
+00000227 Launceston Cup (Tas)
+00000311 Eight Hours Day (Tas)
+00001010 Launceston Show Day (Tas)
+00001024 Hobart Show Day (Tas)
+00001104 Recreation Day (N Tas)
+
+# south australia
+00000520 Adelaide Cup (SA)
+00001226 Proclamation Day holiday (SA)
+
+# western australia
+*0312 Labour Day (WA)
+*0612 Foundation Day (WA)
+00000930 Queen's Birthday (WA)
+
+# northern territory
+*0512 May Day (NT)
+*0716 Alice Springs Show Day (NT)
+*0726 Tennant Creek Show Day (NT)
+*0736 Katherine Show Day (NT)
+*07L6 Darwin Show Day (NT)
+*0812 Picnic Day (NT)
+
+# queensland
+*0512 Labour Day (Qld)
+00000814 RNA Show Day (Brisbane metro)

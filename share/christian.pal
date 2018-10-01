@@ -1,0 +1,26 @@
+# This calendar is a slightly modified version of the calendars
+# distributed in OpenBSD and FreeBSD.
+#
+# Original versions of these calendars can be found at:
+#
+# http://bsdcalendar.sf.net/
+# http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/calendar/calendars/
+#
+
+
+CC Christian
+00000106 Epiphany
+00001018 Feast Day of St. Luke
+00001206 St. Nicholas' Day
+00001225 Christmas
+Easter-047 Shrove Tuesday / Mardi Gras
+Easter-046 Ash Wednesday (First day of Lent)
+Easter-007 Palm Sunday
+Easter-003 Maundy Thursday
+Easter-002 Good Friday
+Easter	Easter Sunday
+Easter+035 Rogation Sunday
+Easter+039 Ascension Day
+Easter+049 Pentecost
+Easter+056 Trinity Sunday
+Easter+060 Corpus Christi

@@ -1,0 +1,296 @@
+# This calendar is a slightly modified version of the calendars
+# distributed in OpenBSD and FreeBSD.
+#
+# Original versions of these calendars can be found at:
+#
+# http://bsdcalendar.sf.net/
+# http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/calendar/calendars/
+#
+
+
+BD Birth/Death
+00000101 J.D. Salinger born, 1919
+00000101 Paul Revere born in Boston, 1735
+00000102 Isaac Asimov born in Petrovichi, Russian SFSR (now part of USSR), 1920
+00000104 George Washington Carver born in Missouri, 1864
+00000104 Jakob Grimm born, 1785
+00000104 Wilhelm Beer born, 1797, first astronomer to map Mars
+00000105 DeWitt B. Brace born, 1859, inventor of spectrophotometer
+00000106 Millard Fillmore's birthday (let's party!)
+00000111 Alexander Hamilton born in Nevis, British West Indies, 1757?
+00000112 John Hancock born, 1737
+00000112 "Long" John Baldry born in London, 1941
+00000113 Horatio Alger born, 1832
+00000113 Sophie Tucker born, 1884
+00000113 Wilhelm Wien born, 1864, Nobel prize for blackbody radiation laws
+00000114 Albert Schweitzer born, 1875
+00000115 Martin Luther King, Jr. born, 1929
+00000117 Benjamin Franklin born in Boston, 1706
+00000119 Edgar Allan Poe born in Boston, 1809
+00000119 Robert Edward Lee born in Stratford Estate, Virginia, 1807
+00000120 George Burns born, 1896
+00000121 Lenin died, 1924
+00000121 Thomas Jonathan "Stonewall" Jackson born in Clarksburg, VA, 1824
+00000121 Ethan Allen born, 1738
+00000122 Sir Francis Bacon born, 1561
+00000123 Joseph Hewes born, 1730
+00000123 Ernst Abbe born, 1840, formulated diffraction theory
+00000123 Sergei M. Eisenstein born in Riga, Latvia, 1898
+00000123 Samuel Barber died, 1981
+00000124 John Belushi born in Chicago, 1949
+00000125 Robert Burns born, 1759
+00000125 Virginia Woolf born, 1882
+00000125 W. Somerset Maugham born, 1874
+00000127 Samuel Gompers born, 1850
+00000129 Andre the Giant died, 1993
+00000130 Franklin Delano Roosevelt born in Hyde Park, New York, 1882
+00000131 Jackie Robinson born, 1919
+00000203 Gertrude Stein born, 1874
+00000203 Paul Auster born in Newark, N.J., 1947
+00000205 Alex Harvey (SAHB) born in Glasgow, Scotland, 1935
+00000206 King George VI of UK dies;  his daughter becomes Elizabeth II, 1952
+00000207 Sinclair Lewis born, 1885
+00000208 Friedleib F. Runge born, 1795, father of paper chromatography
+00000208 Jules Verne born in Nantes, France, 1828
+00000209 George Hartmann born, 1489, designed astrolabes, timepieces, etc.
+00000210 Charles Lamb born, 1775
+00000210 William Allen White born, 1868
+00000211 William Henry Fox Talbot born, 1800, photographic pioneer
+00000211 Thomas Edison born, 1847
+00000211 Sergei M. Eisenstein died in Moscow, Russia, 1988
+00000212 Abraham Lincoln born, 1809
+00000212 Charles Darwin born in Shrewsbury, England, 1809
+00000215 Galileo Galilei born in Pisa, Italy, 1564
+00000215 Susan B. Anthony born, 1820
+00000216 Pierre Bouguer born, 1698, founder of photometry
+00000217 Federic Eugene Ives born, 1856, pioneer of halftone process
+00000217 T. J. Watson, Sr. born, 1874
+00000218 Ernst Mach born, 1838, philosopher & optics pioneer
+00000219 Nicolas Copernicus born in Thorn, Poland, 1473
+00000220 Ludwig Boltzmann born, 1844, atomic physics pioneer
+00000221 Alexis De Rochon born, 1838, developed the spyglass
+00000222 George Washington born, 1732
+00000222 Pierre Jules Cesar Janssen born, 1824, found hydrogen in the sun
+00000223 W.E.B. DuBois born, 1868
+00000224 Wilhelm Grimm born, 1786
+00000224 Winslow Homer born, 1836
+00000225 Renoir born, 1841
+00000226 Dominique Francois Jean Arago born, 1786; observed "Poisson's spot" cf June 21
+00000227 Marian Anderson born, 1897
+00000228 Michel de Mantaigne born, 1533
+00000229 Herman Hollerith born, 1860
+00000301 David Niven born, 1909
+00000302 Dr. Seuss born, 1904
+00000304 Casimir Pulaski born, 1747
+00000304 Gogol dies, 1852
+00000305 Joseph Stalin dies in Moscow, 1953
+00000305 John Belushi dies in Los Angeles, 1982
+00000306 Michelangelo Buonarroti born in Caprese, Italy, 1475
+00000307 Sir John Frederick William Herschel born, 1792, astronomer
+00000308 Alvan Clark born, 1804, astronomer & lens manufacturer
+00000309 Howard Aiken born, 1900
+00000311 Robert Treat Paine born, 1731
+00000311 Vannevar Bush born, 1890
+00000312 Gustav Robert Kirchhoff born, 1824, physicist
+00000314 Albert Einstein born, 1879
+00000314 Casey Jones born, 1864
+00000314 Giovanni Virginio Schiaparelli born, 1835, astronomer; named Mars "canals"
+00000315 Julius Caesar assassinated by Brutus; Ides of March, 44BC
+00000315 J.J. Robert's Birthday in Liberia
+00000316 George Clymer born, 1739
+00000316 James Madison born, 1751
+00000321 Jean Baptiste Joseph Fourier born, 1768, mathematician & physicist
+00000323 Pierre Simon de Laplace born, 1749, mathematician & astronomer
+00000324 Harry Houdini born, 1874
+00000326 Benjamin Thompson born, 1753, Count Rumford; physicist
+00000326 David Packard died, 1996; age of 83
+00000327 Wilhelm Conrad Roentgen born, 1845, discoverer of X-rays
+00000330 Francisco Jose de Goya born, 1746
+00000330 Sean O'Casey born, 1880
+00000330 Vincent Van Gogh born, 1853
+00000330 Adolph Hitler comitted suicide, 1945
+00000331 Rene Descartes born, 1596, mathematician & philosopher
+00000331 Nikolay Vasilyevich Gogol born, 1809
+00000403 Washington Irving born, 1783
+00000404 Andrey Tarkovsky born, 1932
+00000405 Thomas Hobbes born, 1588, philosopher
+00000408 Buddha born, 563 BC
+00000408 David Rittenhouse born, 1732, astronomer & mathematician
+00000409 Edward Muybridge born, 1830, motion-picture pioneer
+00000409 J. Presper Eckert born, 1919
+00000410 Commodore Matthew Calbraith Perry born, 1794
+00000410 William Booth born, 1829, founder of the Salvation Army
+00000411 Edsger Wybe Dijkstra was born at Rotterdam, 1930
+00000413 Samuel Beckett born in Foxrock, County Dublin, 1906
+00000413 Thomas Jefferson born, 1743
+00000414 Christian Huygen born, 1629, physicist & astronomer; discovered Saturn's rings
+00000415 Leonardo da Vinci born, 1452
+00000415 Jean Genet died in Paris, 1986
+00000416 Charles (Charlie) Chaplin (Sir) born in London, 1889
+00000419 Andre Rene the Giant (Roussimoff) born in Grunoble, France, 1946
+00000420 Adolph Hitler born, 1889
+00000422 Kant born, 1724
+00000422 Lenin born, the best friend of all the children, 1870
+00000423 Shakespeare born, 1564
+00000428 James Monroe born, 1758
+00000428 Mussolini executed, 1945
+00000429 Jules Henri Poincare born, 1854, founder of topology
+00000429 William Randolph Hearst born in San Francisco, 1863
+00000430 Karl Friedrich Gauss born, 1777, mathematician & astronomer
+00000501 Little Walter (Marion Walter Jacobs) born in Alexandria, Louisiana, 1930
+00000502 Dr. Benjamin Spock born, 1903
+00000509 Pinza died, 1957
+00000510 Fred Astaire (Frederick Austerlitz) born in Omaha, Nebraska, 1899
+00000512 Florence Nightingale born in Florence, Italy, 1820
+00000513 Arthur S. Sullivan born, 1842
+00000515 Mike Oldfield born in Essex, England, 1953
+00000519 Ho Chi Minh born, 1890
+00000521 Plato (Aristocles) born in Athens(?), 427BC
+00000527 Hubert H. Humphrey born, 1911
+00000528 Dionne quintuplets born, 1934
+00000529 Gilbert Keith Chesterton born, 1874
+00000529 John Fitzgerald Kennedy born, 1917
+00000529 Patrick Henry born, 1736
+00000530 Mel (Melvin Jerome) Blanc born in San Francisco, 1908
+00000601 Brigham Young born, 1801
+00000601 Marilyn Monroe born, 1926
+00000602 Edward Elgar (Sir) born in Worcestershire, England, 1857
+00000603 Franz Kafka dies in Praha, 1924
+00000603 Henry James born, 1811
+00000607 (Eugene Henri) Paul Gauguin born, 1848
+00000607 George Bryan "Beau" Brummel born, 1778
+00000607 Alan Mathison Turing died, 1954
+00000608 Frank Lloyd Wright born in Richland Center, Wisconsin, 1867
+00000613 Alexander the Great dies (323BC)
+00000615 Edward (Edvard Hagerup) Grieg born in Bergen, Norway, 1843
+00000616 Hammurabi the Great dies, Babylon, 1686 BC
+00000617 M.C. Escher born, 1898
+00000622 Carl Hubbell born, 1903
+00000622 Meryl Streep born in Summit, New Jersey, 1949
+00000622 Konrad Zuse born in Berlin, 1919
+00000623 Alan Mathison Turing born, 1912
+00000625 Eric Arthur Blair (a.k.a. George Orwell) born, 1903
+00000627 Helen Keller born, 1880
+00000703 Franz Kafka born in Vienna, 1883
+00000704 Nathaniel Hawthorne born in Salem, Massachusetts, 1804
+00000704 John Adams and Thomas Jefferson die on same day, 1826
+00000706 John Paul Jones born, 1747
+00000707 P.T. Barnum dies, 1891
+00000708 Count Ferdinand von Zeppelin born, 1838
+00000710 John Calvin born, 1509
+00000711 John Quincy Adams born, 1767
+00000712 Henry David Thoreau born, 1817
+00000715 Clement Clarke Moore born, 1779, author of "A Visit from Saint Nicholas"
+00000718 Brian Auger born in London, 1939
+00000725 Steve Goodman born in Chicago, 1948
+00000728 (Helen) Beatrix Potter born, 1866
+00000729 Mussolini born, 1883
+00000730 Emily Bronte born, 1818
+00000730 Henry Ford born, 1863
+00000801 Herman Melville born, 1819
+00000803 Lenny Bruce dies of a morphine overdose, 1966
+00000806 Edsger Wybe Dijkstra died after a long struggle with cancer, 2002
+00000808 Dustin Hoffman born in Los Angeles, 1937
+00000812 Thomas Mann's Death, 1955
+00000813 Alfred Hitchcock born, 1899
+00000813 Annie Oakley born, 1860
+00000813 Fidel Castro born, 1927
+00000815 Louis Victor de Broglie born, 1892, physicist
+00000817 Mae West born, 1892
+00000818 Meriwether Lewis born, 1774
+00000820 Leon Trotsky assassinated, 1940
+00000823 Gene Kelly born, 1912
+00000827 Lyndon B. Johnson born, 1908
+00000829 Oliver Wendell Holmes born, 1809, physician & father of the jurist
+00000830 John W. Mauchly born, 1907
+00000905 King Louis XIV of France born, 1638
+00000905 Raquel Welch born, 1942
+00000906 Word is received that Perry has reached the North Pole and died, 1909
+00000907 James Fenimore Cooper born in Burlington, NJ, 1789
+00000907 Queen Elizabeth I of England born, 1533
+00000908 Richard ``the Lionheart", King of England born in Oxford, 1157
+00000908 Peter Sellers born in Southsea, England, 1925
+00000909 Chinese Communist Party Chairman Mao Tse-Tung dies at age 82, 1976
+00000912 Jesse Owens born, 1913
+00000912 Stanislaw Lem born in Lwow, Poland, 1921
+00000913 Walter Reed born, 1851
+00000915 Agatha Christie born in Torquay, England, 1890
+00000916 Allen Funt born in Brooklyn, NY, 1914
+00000918 Konstantin Eduardovich Tsiolkovsky born, 1857, father of rocket flight
+00000918 Greta Garbo born, 1905
+00000918 Jimi Hendrix dies from an overdose, 1970
+00000919 President Garfield dies of wounds in Elberon, N.J., 1881
+00000919 Tsiolkovsky died, 1935
+00000920 Upton (Beall) Sinclair born, 1878
+00000921 H.G. (Herbert George) Wells born in Bromley, England, 1866
+00000921 Louis Joliet born, 1645
+00000923 Augustus (Gaius Octavius) Caesar born in Rome, 63 BC
+00000923 Euripides born in Salamis, Greece, 480 BC
+00000924 F. Scott Fitzgerald born, 1896
+00000926 Johnny Appleseed born, 1774
+00000926 T.S. (Thomas Stearns) Eliot born in St. Louis, 1888
+00000927 Thomas Nast born, 1840
+00000928 Pompey (Gnaeus Pompeius Magnus) born in Rome, 106BC
+00000928 Seymour Cray born, 1925
+00000929 Gene Autry born, 1907
+00001001 Jimmy Carter born, 1924
+00001002 Aristotle dies of indigestion, 322 BC
+00001002 Mohandas K. Gandhi born at Porbandar, Kathiawad, India, 1869
+00001004 John V. Atanasoff born, 1903
+00001005 Pablo Picasso born in Malaga, Spain, 1881
+00001005 Ray Kroc (founder of McDonald's) born, 1902
+00001013 Lenny Bruce born in New York City, 1925
+00001014 Dwight David Eisenhower born, 1890
+00001014 William Penn born in London, 1644
+00001015 Virgil (Publius Vergilius Maro) born near Mantua, Italy, 70 BC
+00001015 Pelham Grenville Wodehouse born, 1881
+00001016 Noah Webster born, 1758
+00001016 Oscar (Fingal O'Flahertie Wills) Wilde born in Dublin, 1854
+00001017 Richard Mentor Johnson born, 1780, 9th V.P. of U.S.
+00001021 Alfred Nobel born in Stockholm, 1833
+00001027 Gerald M. Weinberg born, 1933
+00001027 James Cook born, 1728
+00001031 Chiang Kai-Shek born, 1887
+00001031 Dale Evans born, 1912
+00001101 Joseph Stalin's burial, 1961
+00001102 Daniel Boone born near Reading, PA, 1734
+00001104 King William III of Orange born, 1650
+00001105 Roy Rogers born, 1912
+00001109 Carl Sagan born, 1934
+00001110 Martin Luther born in Eisleben, Germany, 1483
+00001110 Soviet President Leonid Brezhnev dies at age 75, 1982
+00001111 Kurt Vonnegut, Jr, born in Indianapolis, 1922
+00001113 Robert Louis Stevenson born, 1850
+00001113 St. Augustine of Hippo born in Numidia, Algeria, 354
+00001118 Imogene Coca born, 1908
+00001118 William S. Gilbert born, 1836
+00001120 Robert Fitzgerald Kennedy born, 1925
+00001124 Emir Kusturica born in Srajevo, Bosnia-Herzegovina, 1954
+00001125 Chaucer's death (according to tradition), 1400
+00001126 Charles Schulz born in Minneapolis, Minnesota, 1922
+00001126 Norbert Weiner born, 1894
+00001129 John Mayall born in Cheshire, England, 1933
+00001130 Cleopatra died, 30 BC
+00001130 Mark Twain (Samuel Clemens) born in Florida, Missouri, 1835
+00001201 Woody Allen (Allen Stuart Konigsberg) born in Brooklyn, NY, 1935
+00001203 John von Neumann born, 1903
+00001204 Tommy Bolin dies of a heroin overdose in Miami, 1976
+00001205 Walt (Walter Elias) Disney born in Chicago, 1901
+00001206 Samich Laus brewing
+00001208 Horace (Quintus Horatius Flaccus) born in Venosa (Italy), 65BC
+00001208 James (Grover) Thurber born in Columbus, Ohio, 1894
+00001210 Emily Dickinson born, 1830
+00001212 E.G. Robinson born, 1893
+00001214 George Washington dies, 1799
+00001217 William Safire (Safir) born, 1929
+00001218 Konrad Zuse died, 1995
+00001219 Jean Genet born in Paris, 1910
+00001220 Carl Sagan died, 1996
+00001221 Benjamin Disraeli born, 1804
+00001222 Giacomo Puccini born, 1858
+00001222 Samuel Beckett dies in Paris, 1989
+00001222 Joseph Vissarionnovich Djugashvili (Stalin) born, 1879
+00001223 Joseph Smith born, 1805
+00001225 Isaac Newton (Sir) born in Lincolnshire, England, 1642
+00001225 Humphrey Bogart born in New York City, 1899
+00001226 Charles Babbage born, 1791

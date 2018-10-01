@@ -1,0 +1,35 @@
+# Collection (c) 2005-2008 by Gerfried Fuchs <rhonda@deb.at>
+# Feel free to use the data herein in whatever form you like, including
+# but not limited to use, modify, redistribute and sublicence in any way
+# you like to.
+
+AT Austria
+00000101 Neujahr
+00000106 Heilige Dreikönige
+00000214 Valentinstag
+00000501 Tag der Arbeit
+00000815 Mariä Himmelfahrt
+00001026 Nationalfeiertag
+00001101 Allerheiligen
+00001208 Mariä Empfängnis
+00001224 Heilig Abend
+00001225 Christtag
+00001226 Stefanitag
+00001231 Silvester
+
+Easter-047 Faschingsdienstag
+Easter-046 Aschermittwoch
+Easter-007 Palmsonntag
+Easter-003 Gründonnerstag
+Easter-002 Karfreitag
+Easter     Ostersonntag
+Easter+001 Ostermontag
+Easter+039 Christi Himmelfahrt
+Easter+050 Pfingstmontag
+Easter+056 Heilige Dreifaltigkeit
+Easter+060 Fronleichnam
+
+*03L1 Anfang Sommerzeit --- Uhren vorstellen
+*0521 Muttertag
+*0621 Vatertag
+*10L1 Ende Sommerzeit --- Uhren zurückstellen

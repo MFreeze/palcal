@@ -1,0 +1,32 @@
+.TH VCARD2PAL 1
+.SH "NAME"
+vcard2pal \- convert vcard contacts into a pal calendar file
+.SH "SYNOPSIS"
+\fBvcard2pal \fI[filenames ...]\fR
+.SH "DESCRIPTION"
+.PP
+\fBvcard2pal\fR is a small \fBawk\fR script to convert vcard contacts into a
+calendar file for the \fBpal\fR calendar program.
+.SH "USAGE"
+Using \fBvcard2pal\fR is really simple, as it doesn't have any options.
+.PP
+You feed it some vcard formatted contacts either on stdin or give it the
+filenames of files which it should read and put the output of the script into a
+file which you then give to \fBpal\fR.
+.PP
+As \fBvcard2pal\fR needs no interactive input, you can also call it from
+\fBcron\fR or a makefile to always have an uptodate \fBpal\fR file generated
+from your contacts.
+.SH "BUGS"
+Please report bugs or fixes to Uli Martens <uli@youam.net>.
+.SH "COPYING"
+\fBvcard2pal\fR is released under the example BSD license given in
+\fIhttp://www.debian.org/misc/bsd.license\fR.  The full legalese can be found
+in \fBvcard2pal\fR.
+.PP
+The author is not responsible for any missed birthdays and subsequent family
+feuds, nor anything else.
+.SH "AUTHOR"
+\fBvcard2pal\fR was written by Uli Martens.  This manpage has been written by
+Uli Martens and Carsten Hey and is published under the same terms as
+\fBvcard2pal\fR itself.

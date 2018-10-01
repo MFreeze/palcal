@@ -1,0 +1,110 @@
+CONTENTS:
+
+1: Compilation and installation of pal
+   1.1: Directly from source
+   1.2: RPM-based distributions
+2: Compilation and installation of ical2pal & pal2ical
+
+-----------------------------------------------------------
+
+
++---------------------------------------------------------+
+| 1: Compilation and installation of pal                  |
++---------------------------------------------------------+
+
+----- 1.1: Directly from source -----
+
+1) Untar/unzip the pal-x.x.x.tgz package:
+	tar -xzf pal-x.x.x.tgz
+	cd pal-x.x.x/src
+
+2) (Optional) By default, pal is installed into directories under
+   /usr.  Some distributions usually install things to /usr/local.  To
+   change where pal will be installed to, change the "prefix" line at
+   the top of Makefile.defs.
+
+3) Compile pal
+	make
+
+4) Install pal:
+
+   WITH root access: Run "make install" as root.  This will install
+   several files including the pal binary, global calendar files, and
+   the man page.  (Special note to developers: Use "make
+   install-no-rm" if you don't want the install process to attempt to
+   remove old pal files.  This is useful for when creating a package
+   file for package managers such as portage or rpm.)
+
+   WITHOUT root access; single user: Run "mkdir ~/.pal" as the user
+   you want to run pal as.  Copy the pal-x.x.x/pal.conf file and
+   whatever calendars you want from pal-x.x.x/share into ~/.pal.  To
+   view the man page, run "man pal-x.x.x/pal.1.template".
+
+
+5) (Optional) Delete pal-x.x.x.tgz and the pal-x.x.x directory.
+
+6) Run pal by typing "pal" at the commandline.  This will create
+   ~/.pal and ~/.pal/pal.conf if they do not already exist.
+
+7) Customize
+	- Explore settings in ~/.pal/pal.conf
+	- You can create your own calendar file in ~/.pal and tell pal
+          to load them by making changes to ~/.pal/pal.conf.  For more
+          information see pal's man page.
+
+
+TO UNINSTALL, run "make uninstall" in src while root.
+
+
+----- 1.2: RPM-Based distributions -----
+        (.tgz -> .src.rpm -> .rpm)
+
+1) Generate the .src.rpm file.  As root, run:
+	rpmbuild -ts pal-x.x.x.tgz
+
+2) Compile the .src.rpm file to a .rpm file.  As root, run (where
+   SRCRPMFILE is the filename that was displayed in while running the
+   command in step 1):
+	rpmbuild --rebuild SRCRPMFILE
+
+3) Install as root.  Where RPMFILE is the filename displayed at the
+   end of the output of the step 2.
+
+   If installing for the first time:
+	rpm -ivh RPMFILE
+
+   If upgrading a previous installation:
+	rpm -Uvh RPMFILE
+
+4) (Optional) Remove unneeded files: pal-x.x.x.tgz, RPMFILE and
+   SRCRPMFILE
+
+5) Follow steps 6 and 7 in the section above (Installing DIRECTLY FROM
+   SOURCE).
+
+
+TO UNINSTALL, run the following command as root:
+	rpm -e pal
+
+
+
++---------------------------------------------------------+
+| 2: Compilation and installation of ical2pal & pal2ical  |
++---------------------------------------------------------+
+
+ical2pal and pal2ical are conversion utilities that convert calendars
+between pal's calendar format and the ical format (RFC 2445).
+
+You must have libical (http://www.softwarestudio.org/libical/)
+installed to compile and use the conversion utilities.  You do not
+need to install the utilities to use pal.
+
+NOTE: ical2pal and pal2ical are very new and likely contain bugs.
+
+1) Untar/unzip the pal-x.x.x.tgz package:
+	tar -xzf pal-x.x.x.tgz
+	cd pal-x.x.x/src/convert
+
+2) make ical
+
+3) make ical-install

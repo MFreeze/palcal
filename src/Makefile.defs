@@ -1,0 +1,28 @@
+# This file contains variables that are the same for both pal and
+# gpal.
+
+# directory to install to. Depending on your distribution, you might
+# want to change this to /usr/local
+prefix = /usr
+CC      = gcc
+
+PAL_VERSION = 0.4.3
+
+# used for portage, rpm, ...
+DESTDIR =
+
+# optimizations/warnings
+OPT     = -O2 -Wall
+ifeq ($(DEBUG),1)
+OPT     = -g -Wall -pedantic -Wstrict-prototypes
+endif
+
+# defines
+DEFS    = -DPAL_VERSION=\"$(PAL_VERSION)\" -DPREFIX=\"$(prefix)\"
+ifeq ($(DEBUG),1)
+DEFS    += -DG_DISABLE_DEPRECATED -DDEBUG
+endif
+
+CFLAGS   = ${OPT} 
+CPPFLAGS = ${INCLDIR} ${DEFS}
+LDFLAGS  = ${LIBDIR} ${LIBS}

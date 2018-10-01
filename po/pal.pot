@@ -1,0 +1,1051 @@
+# pal calendar
+# Copyright (C) 2005 Scott Kuhl
+# This file is distributed under the same license as the pal package.
+# Scott Kuhl, 2005.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pal 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-28 18:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: main.c:87 main.c:348
+msgid "tomorrow"
+msgstr ""
+
+#: main.c:93 main.c:348
+msgid "yesterday"
+msgstr ""
+
+#: main.c:99 main.c:348
+msgid "today"
+msgstr ""
+
+#: main.c:105
+msgid "mo"
+msgstr ""
+
+#: main.c:106
+msgid "next mo"
+msgstr ""
+
+#: main.c:112
+msgid "tu"
+msgstr ""
+
+#: main.c:113
+msgid "next tu"
+msgstr ""
+
+#: main.c:119
+msgid "we"
+msgstr ""
+
+#: main.c:120
+msgid "next we"
+msgstr ""
+
+#: main.c:126
+msgid "th"
+msgstr ""
+
+#: main.c:127
+msgid "next th"
+msgstr ""
+
+#: main.c:133
+msgid "fr"
+msgstr ""
+
+#: main.c:134
+msgid "next fr"
+msgstr ""
+
+#: main.c:140
+msgid "sa"
+msgstr ""
+
+#: main.c:141
+msgid "next sa"
+msgstr ""
+
+#: main.c:146
+msgid "su"
+msgstr ""
+
+#: main.c:147
+msgid "next su"
+msgstr ""
+
+#: main.c:153
+msgid "last mo"
+msgstr ""
+
+#: main.c:159
+msgid "last tu"
+msgstr ""
+
+#: main.c:165
+msgid "last we"
+msgstr ""
+
+#: main.c:171
+msgid "last th"
+msgstr ""
+
+#: main.c:177
+msgid "last fr"
+msgstr ""
+
+#: main.c:183
+msgid "last sa"
+msgstr ""
+
+#: main.c:189
+msgid "last su"
+msgstr ""
+
+#: main.c:200
+msgid "^[0-9]+ days away$"
+msgstr ""
+
+#: main.c:218
+msgid "^[0-9]+ days ago$"
+msgstr ""
+
+#: main.c:346
+#, c-format
+msgid "ERROR: The following date is not valid: %s\n"
+msgstr ""
+
+#: main.c:347
+msgid "Valid date formats include:"
+msgstr ""
+
+#: main.c:348
+msgid "dd, mmdd, yyyymmdd,"
+msgstr ""
+
+#: main.c:349
+msgid "'n days away', 'n days ago',"
+msgstr ""
+
+#: main.c:350
+msgid "first two letters of weekday,"
+msgstr ""
+
+#: main.c:351
+msgid "'next ' followed by first two letters of weekday,"
+msgstr ""
+
+#: main.c:352
+msgid "'last ' followed by first two letters of weekday,"
+msgstr ""
+
+#: main.c:353
+msgid "'1 Jan 2000', 'Jan 1 2000', etc."
+msgstr ""
+
+#: main.c:373
+msgid ""
+"NOTE: You can use -r to specify the range of days to search.  By default, "
+"pal searches days within one year of today."
+msgstr ""
+
+#: main.c:424
+msgid "Copyright (C) 2006, Scott Kuhl"
+msgstr ""
+
+#: main.c:427
+msgid ""
+"pal is licensed under the GNU General Public License and has NO WARRANTY."
+msgstr ""
+
+#: main.c:430
+msgid ""
+" -d date      Show events on the given date.  Valid formats for date "
+"include: dd, mmdd, yyyymmdd, 'Jan 1 2000'.  Run 'man pal' for a list of all "
+"valid formats."
+msgstr ""
+
+#: main.c:431
+msgid ""
+" -r n         Display events within n days after today or a date used with -"
+"d. (default: n=0, show nothing)"
+msgstr ""
+
+#: main.c:432
+msgid ""
+" -r p-n       Display events within p days before and n days after today or "
+"a date used with -d."
+msgstr ""
+
+#: main.c:433
+msgid ""
+" -s regex     Search for events matching the regular expression. Use -r to "
+"select range of days to search."
+msgstr ""
+
+#: main.c:434
+msgid " -x n         Expunge events that are n or more days old."
+msgstr ""
+
+#: main.c:436
+msgid " -c n         Display calendar with n lines. (default: 5)"
+msgstr ""
+
+#: main.c:437
+msgid " -f file      Load 'file' instead of ~/.pal/pal.conf"
+msgstr ""
+
+#: main.c:438
+msgid " -u username  Load /home/username/.pal/pal.conf"
+msgstr ""
+
+#: main.c:439
+msgid ""
+" -p palfile   Load *.pal file only (overrides files loaded from pal.conf)"
+msgstr ""
+
+#: main.c:440
+msgid " -m           Add/Modify/Delete events interactively."
+msgstr ""
+
+#: main.c:441
+msgid " --color      Force colors, regardless of terminal type."
+msgstr ""
+
+#: main.c:442
+msgid " --nocolor    Force no colors, regardless of terminal type."
+msgstr ""
+
+#: main.c:443
+msgid " --mail       Generate output readable by sendmail."
+msgstr ""
+
+#: main.c:444
+msgid " --html       Generate HTML calendar.  Set size of calendar with -c."
+msgstr ""
+
+#: main.c:445
+msgid " --latex      Generate LaTeX calendar.  Set size of calendar with -c."
+msgstr ""
+
+#: main.c:446
+msgid " -v           Verbose output."
+msgstr ""
+
+#: main.c:447
+msgid " --version    Display version information."
+msgstr ""
+
+#: main.c:448
+msgid " -h, --help   Display this help message."
+msgstr ""
+
+#: main.c:451
+msgid "Type \"man pal\" for more information."
+msgstr ""
+
+#: main.c:466
+msgid "ERROR: Number required after -r argument."
+msgstr ""
+
+#: main.c:467 main.c:492 main.c:504 main.c:583 main.c:600 main.c:615
+#: main.c:632 main.c:646 main.c:655
+msgid "Use --help for more information."
+msgstr ""
+
+#: main.c:491
+msgid "ERROR: Number required after -c argument."
+msgstr ""
+
+#: main.c:503
+msgid "ERROR: Date required after -d argument."
+msgstr ""
+
+#: main.c:513
+msgid "NOTE: Use quotes around the date if it has spaces.\n"
+msgstr ""
+
+#: main.c:527
+msgid "WARNING: -a is deprecated, use -m instead.\n"
+msgstr ""
+
+#: main.c:572
+#, c-format
+msgid "Compiled with prefix: %s\n"
+msgstr ""
+
+#: main.c:582
+msgid "ERROR: Pal conf file required after -f argument."
+msgstr ""
+
+#: main.c:599
+msgid "ERROR: *.pal file required after -p argument."
+msgstr ""
+
+#: main.c:614
+msgid "ERROR: Username required after -u argument."
+msgstr ""
+
+#: main.c:631
+msgid "ERROR: Regular expression required after -s argument."
+msgstr ""
+
+#: main.c:645
+msgid "ERROR: Number required after -x argument."
+msgstr ""
+
+#: main.c:654
+msgid "ERROR: Bad argument:"
+msgstr ""
+
+#: output.c:327
+msgid "Mo   Tu   We   Th   Fr   Sa   Su"
+msgstr ""
+
+#: output.c:329
+msgid "Su   Mo   Tu   We   Th   Fr   Sa"
+msgstr ""
+
+#: output.c:562
+msgid "Today"
+msgstr ""
+
+#: output.c:564
+msgid "Tomorrow"
+msgstr ""
+
+#: output.c:566
+msgid "Yesterday"
+msgstr ""
+
+#: output.c:568
+#, c-format
+msgid "%d days away"
+msgstr ""
+
+#: output.c:570
+#, c-format
+msgid "%d days ago"
+msgstr ""
+
+#: output.c:617 output.c:623
+msgid "No events."
+msgstr ""
+
+#: input.c:189
+#, c-format
+msgid "WARNING: File is missing 2 character marker and event type: %s\n"
+msgstr ""
+
+#: input.c:210
+msgid "ERROR: First line is improperly formatted.\n"
+msgstr ""
+
+#: input.c:211 input.c:276 input.c:294 input.c:321
+msgid "FILE"
+msgstr ""
+
+#: input.c:213 input.c:277 input.c:295 input.c:322
+msgid "LINE"
+msgstr ""
+
+#: input.c:220
+#, c-format
+msgid "ERROR: First line is not ASCII or UTF-8 in %s.\n"
+msgstr ""
+
+#: input.c:275
+msgid "ERROR: Invalid date string.\n"
+msgstr ""
+
+#: input.c:293
+msgid "ERROR: Event description missing.\n"
+msgstr ""
+
+#: input.c:309
+#, c-format
+msgid "ERROR: Event text '%s' is not ASCII or UTF-8 in file %s.\n"
+msgstr ""
+
+#: input.c:320
+msgid "ERROR: Event with count has no start date\n"
+msgstr ""
+
+#: input.c:336
+msgid "Expunged"
+msgstr ""
+
+#: input.c:391 del.c:54
+#, c-format
+msgid "ERROR: Can't write file: %s\n"
+msgstr ""
+
+#: input.c:392
+#, c-format
+msgid "File will not be expunged: %s"
+msgstr ""
+
+#: input.c:442 del.c:87
+#, c-format
+msgid "ERROR: Can't rename %s to %s\n"
+msgstr ""
+
+#: input.c:462
+#, c-format
+msgid "ERROR: File doesn't exist: %s\n"
+msgstr ""
+
+#: input.c:486
+#, c-format
+msgid "ERROR: Can't find file.  I tried %s and %s.\n"
+msgstr ""
+
+#: input.c:512
+#, c-format
+msgid "Reading: %s\n"
+msgstr ""
+
+#: input.c:515 del.c:46
+#, c-format
+msgid "ERROR: Can't read file: %s\n"
+msgstr ""
+
+#: input.c:534
+msgid "Looking for data to expunge.\n"
+msgstr ""
+
+#: input.c:543
+#, c-format
+msgid "ERROR: Can't open file: %s\n"
+msgstr ""
+
+#: input.c:556
+#, c-format
+msgid "NOTE: Creating %s\n"
+msgstr ""
+
+#: input.c:557
+msgid ""
+"NOTE: Edit ~/.pal/pal.conf to change how and if certain events are "
+"displayed.\n"
+msgstr ""
+
+#: input.c:565
+#, c-format
+msgid "ERROR: Can't create directory: %s\n"
+msgstr ""
+
+#: input.c:581
+msgid "ERROR: Can't open file: /etc/pal.conf\n"
+msgstr ""
+
+#: input.c:582
+msgid "ERROR: Can't open file: "
+msgstr ""
+
+#: input.c:583
+msgid "ERROR: This indicates an improper installation.\n"
+msgstr ""
+
+#: input.c:590
+#, c-format
+msgid "ERROR: Can't create/write file: %s\n"
+msgstr ""
+
+#: input.c:664 input.c:715
+#, c-format
+msgid "ERROR: Invalid color '%s' in file %s."
+msgstr ""
+
+#: input.c:666 input.c:717
+msgid "Valid colors:"
+msgstr ""
+
+#: input.c:740
+#, c-format
+msgid "ERROR: Invalid line (File: %s, Line text: %s)\n"
+msgstr ""
+
+#: input.c:747
+#, c-format
+msgid ""
+"Done reading data (%d events, %d files).\n"
+"\n"
+msgstr ""
+
+#: rl.c:99
+msgid "WARNING: Failed to convert your input into UTF-8.\n"
+msgstr ""
+
+#: rl.c:105
+msgid "Converted string to UTF-8."
+msgstr ""
+
+#: rl.c:224
+msgid "y"
+msgstr ""
+
+#: rl.c:229
+msgid "n"
+msgstr ""
+
+#: rl.c:252
+msgid "Use \"today\" to access TODO events."
+msgstr ""
+
+#: rl.c:255 rl.c:362
+msgid ""
+"Valid date formats include: yyyymmdd, Jan 1 2000, 1 Jan 2000, 4 days away"
+msgstr ""
+
+#: rl.c:257
+msgid "Date for event or search string: "
+msgstr ""
+
+#: rl.c:278 rl.c:312
+msgid "Use \"0\" to use a different date or search string."
+msgstr ""
+
+#: rl.c:280 rl.c:314
+msgid "Select event number: "
+msgstr ""
+
+#: rl.c:294 rl.c:328
+msgid ""
+"This event is in a global calendar file.  You can change this event only by "
+"editing the global calendar file manually (root access might be required)."
+msgstr ""
+
+#: rl.c:364
+msgid "Date for event: "
+msgstr ""
+
+#: rl.c:374
+msgid "Events on the date you selected:\n"
+msgstr ""
+
+#: rl.c:381
+msgid "Is this the correct date?"
+msgstr ""
+
+#: rl.c:384
+msgid "%a %e %b %Y - Accept? [y/n]: "
+msgstr ""
+
+#: html.c:70 html.c:80 latex.c:79 latex.c:89
+msgid "Sunday"
+msgstr ""
+
+#: html.c:72 latex.c:81
+msgid "Monday"
+msgstr ""
+
+#: html.c:73 latex.c:82
+msgid "Tuesday"
+msgstr ""
+
+#: html.c:74 latex.c:83
+msgid "Wednesday"
+msgstr ""
+
+#: html.c:75 latex.c:84
+msgid "Thursday"
+msgstr ""
+
+#: html.c:76 latex.c:85
+msgid "Friday"
+msgstr ""
+
+#: html.c:77 latex.c:86
+msgid "Saturday"
+msgstr ""
+
+#: html.c:245
+msgid "Calendar created with <a href='http://palcal.sourceforge.net/'>pal</a>."
+msgstr ""
+
+#: add.c:35
+msgid "1st"
+msgstr ""
+
+#: add.c:36
+msgid "2nd"
+msgstr ""
+
+#: add.c:37
+msgid "3rd"
+msgstr ""
+
+#: add.c:38
+msgid "4th"
+msgstr ""
+
+#: add.c:39
+msgid "5th"
+msgstr ""
+
+#: add.c:40
+msgid "6th"
+msgstr ""
+
+#: add.c:41
+msgid "7th"
+msgstr ""
+
+#: add.c:42
+msgid "8th"
+msgstr ""
+
+#: add.c:43
+msgid "9th"
+msgstr ""
+
+#: add.c:44
+msgid "10th"
+msgstr ""
+
+#: add.c:63
+msgid "Does the event have start and end dates? "
+msgstr ""
+
+#: add.c:65
+msgid "[y/n]: "
+msgstr ""
+
+#: add.c:99 add.c:105 add.c:147 manage.c:158
+msgid "Start date: "
+msgstr ""
+
+#: add.c:117
+msgid "End date (blank is none): "
+msgstr ""
+
+#: add.c:133
+msgid "ERROR: End date must be after start date.\n"
+msgstr ""
+
+#: add.c:151
+msgid "End date: "
+msgstr ""
+
+#: add.c:154
+msgid "Accept? [y/n]:"
+msgstr ""
+
+#: add.c:180
+msgid "Select how often this event occurs\n"
+msgstr ""
+
+#: add.c:206
+msgid "Select type: "
+msgstr ""
+
+#: add.c:228 remind.c:143
+msgid "Event type: "
+msgstr ""
+
+#: add.c:250
+msgid "What is the description of the event?\n"
+msgstr ""
+
+#: add.c:267 add.c:270
+msgid "Description: "
+msgstr ""
+
+#: add.c:275
+msgid "Is this description correct? [y/n]: "
+msgstr ""
+
+#: add.c:289
+msgid "Calendar file (usually ending with \".pal\") to add event to:\n"
+msgstr ""
+
+#: add.c:300
+msgid "Filename: "
+msgstr ""
+
+#: add.c:321
+#, c-format
+msgid "ERROR: %s is a directory.\n"
+msgstr ""
+
+#: add.c:332
+#, c-format
+msgid "WARNING: %s does not exist.\n"
+msgstr ""
+
+#: add.c:334
+msgid "Create? [y/n]: "
+msgstr ""
+
+#: add.c:347
+#, c-format
+msgid "ERROR: Can't create %s.\n"
+msgstr ""
+
+#: add.c:360
+#, c-format
+msgid "Information for %s:\n"
+msgstr ""
+
+#: add.c:363
+msgid "2 character marker for calendar: "
+msgstr ""
+
+#: add.c:368
+msgid "Calendar title: "
+msgstr ""
+
+#: add.c:374
+msgid ""
+"If you want events in this new calendar file to appear when you run pal,\n"
+"  you need to manually update ~/.pal/pal.conf"
+msgstr ""
+
+#: add.c:375
+msgid "Press any key to continue."
+msgstr ""
+
+#: add.c:412
+#, c-format
+msgid "ERROR: Can't read from file %s.\n"
+msgstr ""
+
+#: add.c:413 add.c:430
+msgid "Try again? [y/n]: "
+msgstr ""
+
+#: add.c:429
+#, c-format
+msgid "ERROR: Can't write to file %s.\n"
+msgstr ""
+
+#: add.c:443
+#, c-format
+msgid "Wrote new event \"%s %s\" to %s.\n"
+msgstr ""
+
+#: add.c:466
+msgid "Add an event"
+msgstr ""
+
+#: add.c:469
+msgid "Selected date: "
+msgstr ""
+
+#: add.c:480
+msgid "Date (in pal's format):"
+msgstr ""
+
+#: edit.c:63 edit.c:72 edit.c:80 edit.c:89
+msgid "None"
+msgstr ""
+
+#: edit.c:120
+msgid "Event Description"
+msgstr ""
+
+#: edit.c:121
+msgid "Event Type"
+msgstr ""
+
+#: edit.c:122
+msgid "Skip Count"
+msgstr ""
+
+#: edit.c:123
+msgid "Start Date"
+msgstr ""
+
+#: edit.c:124
+msgid "End Date"
+msgstr ""
+
+#: edit.c:125
+msgid "Start Time"
+msgstr ""
+
+#: edit.c:126
+msgid "End Time"
+msgstr ""
+
+#: edit.c:127
+msgid "Hashtable Key"
+msgstr ""
+
+#: edit.c:128
+msgid "Date in File"
+msgstr ""
+
+#: edit.c:129
+msgid "Event File"
+msgstr ""
+
+#: edit.c:130
+msgid "Event Marked on Calendar?"
+msgstr ""
+
+#: edit.c:131
+msgid "File Color"
+msgstr ""
+
+#: del.c:47 del.c:55 del.c:88
+msgid "       The event was NOT deleted."
+msgstr ""
+
+#: del.c:96
+#, c-format
+msgid "Event removed from %s.\n"
+msgstr ""
+
+#: del.c:99
+#, c-format
+msgid "ERROR: Couldn't find event to be deleted in %s"
+msgstr ""
+
+#: del.c:111
+msgid "Delete an event"
+msgstr ""
+
+#: del.c:115
+msgid ""
+"If you want to delete old events that won't occur again, you can use pal's -"
+"x option instead of deleting the events manually."
+msgstr ""
+
+#: del.c:121
+msgid "You have selected to delete the following event:\n"
+msgstr ""
+
+#: del.c:124 manage.c:618
+msgid "Are you sure you want to delete this event? [y/n]: "
+msgstr ""
+
+#: remind.c:63
+msgid "Event reminder"
+msgstr ""
+
+#: remind.c:67
+msgid ""
+"This feature allows you to select one event and have an email sent to you "
+"about the event at a date/time that you provide.  If the event is recurring, "
+"you will only receive one reminder.  You MUST have atd, crond and sendmail "
+"installed and working for this feature to work."
+msgstr ""
+
+#: remind.c:97 remind.c:101
+msgid "Remind me on (HH:MM YYYY-MM-DD): "
+msgstr ""
+
+#: remind.c:106 remind.c:110
+msgid "Username on local machine or email address: "
+msgstr ""
+
+#: remind.c:130
+msgid "Event: "
+msgstr ""
+
+#: remind.c:134
+msgid "Event date: "
+msgstr ""
+
+#: remind.c:152
+msgid "Attempting to run 'at'...\n"
+msgstr ""
+
+#: remind.c:157
+msgid ""
+"ERROR: Date string was invalid or could not run 'at'.  Is 'atd' running?"
+msgstr ""
+
+#: remind.c:161
+msgid "Successfully added event to the 'at' queue.\n"
+msgstr ""
+
+#: search.c:104
+#, c-format
+msgid ""
+"[ Begin search results: %s ]\n"
+"[ From %s to %s inclusive ]\n"
+"\n"
+msgstr ""
+
+#: search.c:161
+#, c-format
+msgid "[ End search results: %s ]"
+msgstr ""
+
+#: search.c:162
+#, c-format
+msgid "[ %d event found ]\n"
+msgid_plural "[ %d events found ]\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: manage.c:150
+msgid "Event Type: "
+msgstr ""
+
+#: manage.c:155
+msgid "Skip count: "
+msgstr ""
+
+#: manage.c:166
+msgid "End date:   "
+msgstr ""
+
+#: manage.c:174
+msgid "Key:        "
+msgstr ""
+
+#: manage.c:274
+#, c-format
+msgid "%s Isearch starting from %s"
+msgstr ""
+
+#: manage.c:275
+msgid "Forward"
+msgstr ""
+
+#: manage.c:275
+msgid "Backward"
+msgstr ""
+
+#: manage.c:283
+msgid "No matches found!"
+msgstr ""
+
+#: manage.c:319
+msgid "Isearch: "
+msgstr ""
+
+#: manage.c:400
+msgid "pal calendar"
+msgstr ""
+
+#: manage.c:450
+msgid "Press 'h' for help, 'q' to quit."
+msgstr ""
+
+#: manage.c:518
+msgid "Goto date: "
+msgstr ""
+
+#: manage.c:562
+msgid "Can't edit global event!"
+msgstr ""
+
+#: manage.c:567
+msgid "New description: "
+msgstr ""
+
+#: manage.c:584
+msgid "No event selected."
+msgstr ""
+
+#: manage.c:615
+msgid "Can't delete global event!"
+msgstr ""
+
+#: manage.c:650
+msgid "LeftArrow"
+msgstr ""
+
+#: manage.c:651
+msgid "Back one day"
+msgstr ""
+
+#: manage.c:653
+msgid "RightArrow"
+msgstr ""
+
+#: manage.c:654
+msgid "Forward one day"
+msgstr ""
+
+#: manage.c:656
+msgid "UpArrow"
+msgstr ""
+
+#: manage.c:657
+msgid "Back one week or event (if in event selection mode)"
+msgstr ""
+
+#: manage.c:659
+msgid "DownArrow"
+msgstr ""
+
+#: manage.c:660
+msgid "Forward one week or event (if in event selection mode)"
+msgstr ""
+
+#: manage.c:663
+msgid "This help screen."
+msgstr ""
+
+#: manage.c:666
+msgid "Quit"
+msgstr ""
+
+#: manage.c:668
+msgid "Tab, Enter"
+msgstr ""
+
+#: manage.c:669
+msgid "Toggle event selection"
+msgstr ""
+
+#: manage.c:672
+msgid "Jump to a specific date."
+msgstr ""
+
+#: manage.c:675
+msgid "Jump to today."
+msgstr ""
+
+#: manage.c:678
+msgid "Edit description of the selected event."
+msgstr ""
+
+#: manage.c:681
+msgid "Add an event to the selected date."
+msgstr ""
+
+#: manage.c:684
+msgid "Forward/reverse i-search"
+msgstr ""
+
+#: manage.c:686
+msgid "Delete"
+msgstr ""
+
+#: manage.c:687
+msgid "Delete selected event."
+msgstr ""
+
+#: manage.c:692
+msgid "Edit date for selected event."
+msgstr ""
+
+#: manage.c:693
+msgid "Search for event."
+msgstr ""
+
+#: manage.c:694
+msgid "Remind me about an event."
+msgstr ""
+
+#: manage.c:697
+msgid "Press any key to exit help."
+msgstr ""

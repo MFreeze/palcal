@@ -1,0 +1,237 @@
+.\" Copyright (c) 2004--2006, Scott Kuhl
+.\"
+.\" This is free documentation; you can redistribute it and/or
+.\" modify it under the terms of the GNU General Public License as
+.\" published by the Free Software Foundation; either version 2 of
+.\" the License, or (at your option) any later version.
+.\"
+.\" The GNU General Public License's references to "object code"
+.\" and "executables" are to be interpreted as the output of any
+.\" document formatting or typesetting system, including
+.\" intermediate and printed output.
+.\"
+.\" This manual is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public
+.\" License along with this manual; if not, write to the Free
+.\" Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139,
+.\" USA.
+.TH pal 1
+.SH NAME
+pal \- calendar with events
+.SH SYNOPSIS
+.TP 3
+\fBpal \fI[options]\fR
+
+.SH DESCRIPTION
+.PP
+\fBpal\fR is a command\(hyline calendar utility.  It displays a \fBcal(1)\fR\(hylike calender and events specified in text files.
+
+.SH OPTIONS
+The following options are provided by \fBpal\fR:
+.TP
+.B \-d \fIdate\fB
+Show events on the given date.  Valid formats for \fIdate\fR include: dd, mmdd, yyyymmdd, 'yesterday', 'today', 'tomorrow', 'n days away', 'n days ago', first two letters of weekday, 'next ' followed by first two letters of weekday, 'last ' followed by first two letters of weekday, '1 Jan 2000', 'Jan 1 2000'.
+.TP
+.B \-r \fIn\fB
+Display events occurring in the next \fIn\fR days (counting today).  By default, \fIn\fR is 0 and no events are displayed.  For example, using \fI\-r 1\fR makes \fBpal\fR display events occurring today.  If \fB\-d\fR is used too, the range is relative to \fIdate\fR instead of the current date.
+.TP
+.B \-r \fIp\fB\-\fIn\fB
+Display a list of events occurring in the past \fIp\fR days (not counting today) and the next \fIn\fR days (counting today).  For example \fI\-r 1\-1\fR will show yesterday's and today's events.  If \fB\-d\fR is used too, the range is relative to \fIdate\fR instead of the current date.
+.TP
+.B \-s \fIregex\fB
+Search for any occurrences of an event matching the regular expression (\fIregex\fR) occurring in the range of dates specified with \fB\-r\fR.  This command searches both the event description and the type of event (specified at the top of a calendar file).  This search is case insensitive.
+.TP
+.B \-x \fIn\fB
+Expunge events that are \fIn\fR or more days old if they do not occur again in the future.  \fBpal\fR will not expunge events from the calendars loaded from \fI/usr/share/pal\fR; even if you are root and you have added events to the calendars that are not recurring.  When \fB\-x\fR is used with \fB\-v\fR, the events that are expunged will be displayed.
+.TP
+.B \-c \fIn\fB
+Display a calendar with \fIn\fR lines (default: 5).
+.TP
+.B \-f \fIfile\fB
+Load \fIfile\fR instead of \fI~/.pal/pal.conf\fR.
+.TP
+.B \-u \fIusername\fB
+Load /home/\fIusername\fR/.pal/pal.conf instead of \fI~/.pal/pal.conf\fR.
+.TP
+.B \-p \fIpalfile\fB
+Override the .pal files loaded from pal.conf.  This will only load \fIpalfile\fR.  For convenience, if \fIpalfile\fR is a relative path, pal looks for the file relative from \fI~/.pal/\fR, if not found, it tries relative to \fI/usr/share/pal/\fR, if not found it tries relative to your current directory.  (This behavior might change in the future.)  Using an absolute path will work as you expect it to.
+.TP
+.B \-m
+Manage events interactively.  Events can be added, modified and deleted with this interface.
+.TP
+.B \-\-color
+Force use of colors, regardless of terminal type.
+.TP
+.B \-\-nocolor
+Do not use colors, regardless of terminal type.
+.TP
+.B \-\-mail
+Generates output readable by sendmail by adding "From:" and "Subject:" fields and forcing \fB\-\-nocolor\fR.  For example, you could mail yourself a reminder of the upcoming events in the next week with \fBpal \-\-mail \-r 7 | sendmail username\fR.  Note: For the calendar to appear correctly, make sure your email client is using a fixed width font.
+.TP
+.B \-\-html
+Generates a HTML calendar suitable for display on a web page.  It does not generate a complete HTML document so that you can add your website's header and footer around the calendar.  The number of months shown on the calendar can be adjusted with \fB\-c\fR.  You will need to use Cascading Style Sheets (CSS) to change how the calendar appears; if you do not use a style sheet, the calendar will not have any borders.  See \fI/usr/share/doc/pal/example.css\fR for an example style.  SECURITY NOTE: If you set up pal so it is being executed server\(hyside, it is recommended that you do not allow web page visitors to directly change the parameters sent to pal.  Allowing users to pass strange parameters (such as extremely long ones) can be a security risk.
+.TP
+.B \-\-latex
+Generates a LaTeX source for a calendar that can be used to generate a printer\(hyfriendly DVI (run "pal \-\-latex > file.tex; latex file.tex"), PostScript or PDF (run "pal \-\-latex > file.tex; pdflatex file.tex").  The number of months shown on the calendar can be adjusted with \fB\-c\fR.
+.TP
+.B \-v
+Verbose output.
+.TP
+.B \-\-version
+Display version information.
+.TP
+.B \-h, \-\-help
+Display a help message.
+
+.SH EVENT DESCRIPTIONS
+.TP 3
+.B Years since year YYYY
+pal will replace !YYYY! (where YYYY is a year) with the current year
+minus YYYY.  This feature is particularly useful for birthdays.  For
+example, the event text for a birthday could be: John Doe was born on this day in
+1990.  He is !1990! years old.
+.TP 3
+.B Sort by time
+If events have a time in the event description, pal will sort these events by time.  The time in the event description must be of the format \fIh:mm\fR or \fIhh:mm\fR (where \fIhh\fR is 0\-23).  If an event has more than one time in the event description, pal will sort the event by the first time.  Events that do not have times in them are shown before all the events that do have times.  Events without times are sorted in the order that they are loaded in pal.conf.
+
+
+.SH FILE FORMATS
+Unless \fB\-f\fR or \fB\-u\fR is used, \fBpal\fR looks for (or tries to create if it doesn't
+exist) a configuration file named \fI~/.pal/pal.conf\fR.  \fBpal.conf\fR contains settings for
+\fBpal\fR and a list other files that contain events to be displayed
+on the calendar.  The file formats for \fBpal.conf\fR and the \fBevent
+files\fR are described below.
+.TP 3
+.B pal.conf
+.RS 3
+.TP
+.B file \fIfilename\fR [ \fI(color)\fR ]
+Loads an \fBevent file\fR named \fIfilename\fR.  If \fIfilename\fR isn't found in \fI~/.pal\fR, \fBpal\fR will look for it in \fI/usr/share/pal\fR.  The color parameter is optional, it will display the events in the file with the given color.  Valid colors: black, red, green, yellow, blue, magenta, cyan, white
+.TP
+.B file_hide \fIfilename\fR [ \fI(color)\fR ]
+Loads an \fBevent file\fR name \fIfilename\fR.  These events are not indicated in the calendar that is printed, but they are displayed when the \fI\-r\fR argument is used.  If \fIfilename\fR isn't found in \fI~/.pal\fR, \fBpal\fR will look for it in \fI/usr/share/pal\fR.  The color parameter is optional, it will display the events in the file with the given color.  Valid colors: black, red, green, yellow, blue, magenta, cyan, white
+.TP
+.B event_color \fIcolor\fR
+The default color used for events.  Valid colors: black, red, green, yellow, blue, magenta, cyan, white
+.TP
+.B week_start_monday
+If this keyword is defined, the calendar weeks start on Monday instead of Sunday.
+.TP
+.B date_fmt \fIstring\fR
+Changes how dates are displayed when the \fB\-r\fR \fB\-d\fR or \fB\-s\fR arguments are used.
+\fIstring\fR can be a date format string that follows the format used
+by \fBstrftime(3)\fR.  Type \fBman strftime\fR for more information.
+\fIstring\fR is set to \fB%a %e %b %Y\fR by default (example: Sun  8 Aug 2010).
+.TP
+.B reverse_order
+Display all event listings in descending order.
+.TP
+.B hide_event_type
+Hide the event type (shown in before a ':') when listing events.  The event type is defined at the top of the file that the event is found in.
+.TP
+.B cal_on_bottom
+Display calendar at the end of the output.
+.TP
+.B no_columns
+Display calendar in one column instead of two.
+.TP
+.B compact_list
+List events that are shown when using \-r in a more compact form.
+.TP
+.B compact_date_fmt
+Format for the date displayed when compact_list is used.  See date_fmt for more information.
+.TP
+.B default_range \fIrange\fR
+If you get tired of always using \-r, you can set the default value for
+\-r here.  See the information on \-r above to see possible values for
+\fIrange\fR.  Note: Remember that this will affect what is displayed
+when \-d and \-s are used too.
+.RE
+
+
+.B Event Files
+.RS 3
+Event files are ASCII or UTF\-8 text files (usually with a .pal ending) that define events for \fBpal\fR to show.  Example event files can be found in \fI/usr/share/pal\fR.  The first line in these files indicate settings that apply to all of the events in the file.  The first line starts with two characters that should be used in the calendar that \fBpal\fR displays.  A longer description of the kinds of events in the file follows the two characters.  This description will be displayed when the
+\fB\-r\fR argument is used.  All other lines in the file are in the format \fIdate\fR \fIevent\fR.  \fIdate\fR defines when the event occurs and \fIevent\fR is a string that describes the event.  Below is a description of the different strings that can be used with \fIdate\fR:
+.TP
+.B Events that occur only once
+Use the format \fIyyyymmdd\fR.
+.TP
+.B Daily events
+The format \fIDAILY\fR can be used for an event that happens every day.
+.TP
+.B Weekly events
+The format \fIMON\fR, \fITUE\fR, \fIWED\fR, \fITHU\fR, \fIFRI\fR, \fISAT\fR and \fISUN\fR can be used for an event that happens every week.
+.TP
+.B Monthly events
+Use the format \fI000000dd\fR.
+.TP
+.B Annual events
+Use the format \fI0000mmdd\fR.
+.TP
+.B Annual: Events that occur on the Nth day of a month.
+Use the format \fI*mmnd\fR.  Where \fId\fR is the day (1 = Sunday, 7 = Saturday).  Example: *1023 (10=Oct; 2="second"; 3=Tuesday ==> Second Tuesday in October, every year).
+.TP
+.B Monthly: Events that occur on the Nth day of a month.
+Use the format \fI*00nd\fR.  Where \fId\fR is the day (1 = Sunday, 7 = Saturday).  Example: *0023 (2="second"; 3=Tuesday ==> Second Tuesday of every month).
+.TP
+.B Annual: Events that occur on a certain last day of a month
+Use the format \fI*mmLd\fR.  Example: *10L3 (10=Oct; L=Last; 3=Tuesday ==> Last Tuesday in October).  This is useful for some holidays.
+.TP
+.B Monthly: Events that occur on a certain last day of a month
+Use the format \fI*00Ld\fR.  Example: *00L3 (3=Tuesday ==> Last Tuesday of every month).
+.TP
+.B "Todo" events
+The format \fITODO\fR can be used for an event that always happens on the day that you run pal.  This enables you to use pal to keep track of items in your todo list(s).
+.TP
+.B Easter related events
+Use the format \fIEaster\fR for Easter Sunday.  Use the format \fIEaster+nnn\fR for events that occur \fInnn\fR days after Easter.  Use the format \fIEaster\(hynnn\fR for events that occur \fInnn\fR days before easter.
+.TP
+.B Recurring events with start and end dates
+If a recurring event has a starting date and an ending date, you can use the date format \fIDATE:START:END\fR where \fIDATE\fR is a recurring date format above.  \fISTART\fR and \fIEND\fR are dates in the yyyymmdd format that specify the starting and ending date of the recurring event.  \fISTART\fR and \fIEND\fR dates are inclusive.  For example, if an event happens every Wednesday in October 2010, you could use this format: \fIWED:20101001:20101031\fR
+.TP
+.B Bi-weekly, Bi-annual, etc. events
+If a recurring event does only occurs every Nth occurence, you can add a \fI/N\fR to the event of the date string for that event.  A start date must be specified.  For example, a bi-monthly event that occurs on the first of the month can be specified as \fI00000001/2:20000101\fR.
+.RE
+
+
+.SH INTERNATIONALIZATION AND LOCALIZATION
+
+The calendar files that pal uses must be ASCII encoded or UTF\-8
+encoded text files (ASCII is a subset of UTF\-8).  UTF\-8 enables the
+calendar files to work on any system regardless of the default
+encoding scheme.  When pal prints text, it converts the UTF\-8
+characters into the local encoding for your system.  If pal does not
+display international characters and you are using a UTF\-8 calendar
+file, check to make sure that your locale is set correctly.  You can
+see your locale settings by running "locale".  You can see the
+character set that pal is using for output by running pal with "\-v".
+If pal does not have a translation for your language and you are
+interested in creating a translation, see the po/README file that is
+distributed with the source code for pal.
+
+
+
+
+.SH FILES
+\fI~/.pal/pal.conf\fR: Contains configuration information for \fBpal\fR and a list of .pal text files that contain events.
+
+\fI/etc/pal.conf\fR: This pal.conf file is copied to ~/.pal/pal.conf when a user runs pal for the first time.
+
+\fI/usr/share/pal\fR: Contains several calendar files for \fBpal\fR.
+
+.SH BUGS
+Bugs may be reported via \fIhttp://palcal.sourceforge.net/\fR.
+
+.SH SEE ALSO
+strftime(3), cal(1), regex(7)
+
+.SH SIMILAR PROGRAMS
+\fBpal\fR is similar to BSD's \fBcalendar\fR program and GNU's more complex \fBgcal\fR program.
+
+.SH AUTHORS
+Scott Kuhl

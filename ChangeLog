@@ -1,0 +1,446 @@
+version 0.4.3 (28 July 2008)
+	* Support colour in screen (Adam Lincoln)
+	* Wait for keystroke after add event (Adam Lincoln)
+	* Display flags used while compiling (Martijn van Oosterhout)
+	* Fix warnings generated during DEBUG compilation (Martijn van Oosterhout)
+	* Fix groff warning in manpage (Carsten Hey)
+	* Use CPPFLAGS in makefiles (Martijn van Oosterhout)
+	* Fix segfault when printing strings not valid in user's locale
+	  (Debian bug #492464) (Martijn van Oosterhout)
+
+version 0.4.2 (17 June 2008)
+	* Added vcard2pal from http://youam.net/devel/vcard2pal/ with
+	permission from author.
+
+        * Fix extraneous output when using --mail option
+
+version 0.4.1 (2 June 2008)
+	* Rewrote -m feature to use ncurses. (Scott Kuhl, Martijn van
+	Oosterhout)
+
+	* Rewrote code that handles how different types of events are
+	described (PalEventType was added).   (Martijn van Oosterhout)
+	
+	* Fixed bug that caused the ** markers around the date in the
+	calendar to not be used when the day had multiple events with
+	different markers/colors. (Scott Kuhl)
+
+	* Added a new /<skip> to the date syntax, so you can say "every x
+	days/weeks/months/years". (Martijn van Oosterhout)
+
+	* Add show_weeknum option to pal.conf (Martijn van Oosterhout)
+
+	* Added: ical2pal (requires libical) to convert calendars from
+	ical format to pal's format. (Scott Kuhl)
+
+	* Added: pal2ical to convert calendars from pal's format to the
+	ical format. (Scott Kuhl)
+
+	* Output from pal2ical now compatible with ipods. (Adam Byrtek)
+
+	* --latex output now starts on date specified by -d (Martijn van
+	Oosterhout)
+
+	* Support for UTF8 characters for --html and --latex output improved.
+	(Martijn van Oosterhout)
+
+	* Added <tr> tags previously missing from --html output
+	(Martijn van Oosterhout)
+
+	* Minor --html bugs fixed. (Scott Kuhl, Stephen Smith)
+
+	* --html: Different types of events can now have different
+	colors (defined with CSS). (Scott Kuhl)
+
+	* --html: Allow date specified with -d to be used to define what
+	month should be first in the HTML calendar.  If -d is not
+	specified, the calendar will start by printing the current
+	month. (Guy Brand)
+	
+	* Show events that do not have times in the event description
+	before events that do have times in the event descriptions.  (This
+	reverses the old behavior).  (Scott Kuhl)
+
+	* Rewrote/simplified word wrapping code in pal_output_wrap()
+	(Scott Kuhl)
+
+	* Fix hyphens in man page (Javier Linares)
+
+	* Added Turkish translation (Can Burak Cilingir)
+	
+	* Updated Swedish translation (Lars Bjarby)
+
+	* Updated German translation (Bastian Kleineidam)
+	
+
+version 0.3.4 (2 May 2004)
+	* Fixed: file_hide feature
+
+	* Created new interactive interface for adding/editing/deleting
+	events that is started with the -m parameter.  (-a is now
+	deprecated in favor of -m).
+
+	* Events can be sorted by times in event description.  The time
+	must be in 24-hour time format (h:mm or hh:mm).  If more than one
+	time is in the event description, the first time is used for
+	sorting.  Events with times in them are sorted and shown before
+	all other events in the -r output.  Events that do not have times
+	in them are still sorted by the order they were loaded by
+	~/.pal/pal.conf.
+
+	* When event text contains !YYYY! (example !1900!), that text will
+	be replaced with the number of years since the year YYYY.
+
+	* Added basic reminders of individual events through the use of
+	at/cron.
+
+	* Improved --html output.  Individual days of the week can be
+	styled differently.  The -c argument now adjusts the number of
+	months --html outputs (not the number of weeks).
+
+	* Search feature defaults to searching events within the next 365
+	days (if you don't use -r with -s).
+
+	* Move /usr/share/pal/pal.conf to /etc/pal.conf
+
+	* Streamlined code for reading in calendar files
+
+	* readline related pal functions are now in rl.c
+
+	* Made pal more Debian friendly (Javier Linares)
+
+	* Added Polish translation (Artur Gajda)
+
+	* Added Swedish translation (Lars Bjarby)
+
+	* Added Spanish translation (Javier Linares)
+
+	* Updated German translation (Christopher Knoerle)
+
+
+version 0.3.3 (14 Mar 2004)
+	* pal is now compatible with glib 2.0 (previously, 2.2 was
+	required).
+
+	* Make Easter related events work again
+
+	* --help information is now wrapped according to terminal width.
+
+	* Improved localization of -d 'n days ago' and -d 'n days away'.
+
+	* Fixed a couple character encoding issues when adding events with
+	-a.
+
+	* pal now compiles on Cygwin and properly uses colors in a Cygwin
+	terminal.
+
+	* Fixed infinite loop when loading an empty .pal file.
+
+	* When adding events with -a, do not allow users to use a '#' as
+	the first character in the two character 'marker'.  (Philipp
+	Friedrich)
+
+	* Properly escape text in event descriptions in LaTeX and HTML
+	markup.
+
+	* Several other small bug fixes.
+
+	* Updated German translation (Christopher Knoerle)
+
+
+version 0.3.2 (6 Jan 2004)
+	* Added new recurring event type: The Nth Monday/Tuesday/... of
+	every month.
+
+	* Added new recurring event type: The last Monday/Tuesday/... of
+	every month.
+
+	* man page updates for the two new recurring event types.
+
+	* Added a LaTeX output feature
+
+	* Minor bug fixes for when interactively adding events with "-a".
+
+	* Fixed typos (including some pointed out by Christopher Knoerle)
+
+	* Colors are now shown when using SSH inside of an
+	aterm. (Christopher Knoerle)
+
+	* Localized more strings, modified strings for easier
+	localization.
+
+	* Added German translation (Christopher Knoerle)
+
+
+version 0.3.1 (21 Dec 2003)
+	* Improved international support: pal calendar files can now be
+	either ASCII or UTF-8.  man page for pal has a new
+	internationalization section.  Rewrote text wrapping code to work
+	properly with multibyte UTF-8 characters.  When using -a, pal
+	attempts to convert user input to UTF-8 before writing to calendar
+	file.
+
+	* Wrote translation instructions in po/README
+
+	* Added a note when creating a new calendar file with "pal -a"
+	that you need to update ~/.pal/pal.conf in order to see the events
+	in that calendar.
+
+	* Minor Makefile improvements
+
+	* CSS can now be easily used to style the output of --html
+
+
+version 0.3.0 (8 Nov 2003)
+	* Added ability to assign colors to different .pal files in
+	pal.conf
+
+	* It is now possible to limit a recurring event to be between two
+	dates.  For example a yearly event on Jan 5th on years 2003 and
+	2004 can be written as: 00000105:20030101:20050101.  The first
+	date is a yearly event on Jan 5th.  The second date is the
+	"starting" date and the 3rd date is the ending date.
+
+	* Interactively add events to .pal files with -a.  It can add all
+	types of events: one-time, recurring and recurring with start/end
+	dates.
+
+	* Added TODO keyword to be used before events in a calendar file.
+	TODO can be used for events that always happen on the day that pal
+	is being run on.  This works well for reminding yourself daily of
+	something in a todo list.
+
+	* Added DAILY keyword to be used before events in a calendar file.
+	Unlike TODO, DAILY events happen every day (not only on the
+	current day).
+
+	* Added MON, TUE, WED, THU, FRI, SAT and SUN keywords to be used
+	before events in a calendar file.  These events occur weekly.
+
+	* Removed the yyyy00dd keyword in calendar files that was
+	previously used to allow a monthly event to occur in only one
+	year.  This type of event can now be defined with the new
+	recurring event start/end dates.
+
+	* The date keywords (such as "Easter" and "TODO") in calendar
+	files are now case insensitive.
+
+	* Fixed a bug in the display of *mmnd events that occured
+	sometimes.
+
+	* Basic HTML output filter implemented (--html)
+
+	* Slightly changed the format of event listings.  Removed []'s and
+	made dates bold.
+
+	* Added default_range option in pal.conf
+
+	* Minor calendar file updates
+
+	* More date formats recognized by -d argument and better error
+	checking
+
+	* Added -p command-line argument
+
+	* Added compact_list and compact_date_fmt options in pal.conf
+
+	* Added event_color option in pal.conf
+
+	* Fixed a bug that prevented use of absolute paths to .pal files
+	in pal.conf
+
+	* Added a pal-todo.pal file to the root of the tgz
+
+	* Streamlined colorized output code
+
+	* Attempt to fix an infinite loop on pal's first run on PPC
+
+	* Several small improvements to Makefile
+
+	* Added "prefix" variable in Makefile so pal can easily be
+	installed to /usr/local instead of /usr
+
+	* Fixed erroneous errors when running make with .d files missing
+
+	* Fix compilation problems on FreeBSD
+
+
+version 0.2.5 (27 Sep 2003)
+	* Fixed a segmentation fault that could occur when using the -u
+	argument.
+
+	* Added intelligent line wrapping and indention for events with a
+	long text description.  Words are no longer split between lines.
+
+	* Single column calendar is used if terminal is too narrow.
+
+
+version 0.2.4 (29 Aug 2003)
+	* Added search feature (-s)
+
+	* Improved calendar reading code (fixed bugs, added more error
+	checking)
+
+	* Updated calendar files
+
+	* Events are now displayed in the order that the files are
+	loaded in the pal.conf file when there is > 1 event on a day.
+
+	* Code improvements (more comments, code divided into smaller
+	files)
+
+	* -r can be used to display events that already happened.
+
+	* The range set with -r is now relative to the current date or a
+	date used with -d.
+
+	* The word "range" describes what "-r" does better than
+	"reminders."
+
+
+version 0.2.3 (11 Aug 2003)
+	* IMPORTANT: Fixed expunging problems with global files.  If you
+	ran pal 0.2.2 with the -x argument, it is likely that some global
+	pal files got copied from /use/share/pal to ~/.pal.  It is
+	recommended that you delete these copies if you want to see future
+	updates to the global calendars provided with pal.
+
+	* -x now expects number of days (not weeks) for consistency with
+	other arguments.
+
+	* Fixed mistakes in man page
+
+	* Made Makefile compatible with older versions of sed that don't
+	support -i (such the version in redhat 7.3)
+
+	* Fixed many memory leaks
+
+	* Error messages are now displayed for improperly formatted
+	calendar files.
+
+	* Added hide_remind_titles to pal.conf
+
+	* Updates to several calendar files
+
+	* Comments are now allowed in calendar files.
+
+	* Added -u argument (similar to -f)
+
+	* --mail works with -v
+
+	* Simplified calendar reading code
+
+	* Removed the bad German translation.  An improved version is
+	included in the tgz but is not installed.  Translators are welcome
+	to contribute to pal.
+
+
+version 0.2.2 (7 Aug 2003)
+	* Added man page
+
+	* Added calender to be displayed in columns (changes usage of -c
+	slightly)
+
+	* Added no_columns keyword to pal.conf
+
+	* Added very rough German translation (set LANG to de_DE to use)
+
+	* Added calendar files from the OpenBSD calendar program
+
+	* Added capability to look for global event files in
+	/usr/share/pal if they weren't found in ~/.pal
+
+	* Added file_hide keyword to pal.conf
+
+	* Added remind_reverse keyword to pal.conf
+
+	* Added cal_on_bottom keyword to pal.conf
+
+	* Changed usage of -r.  It now uses days, not weeks
+
+	* Allowed absolute paths to be specified after file_hide and file
+	keywords in pal.conf
+
+	* Error messages now use stderr---not stdout
+
+	* Removed pretty_date() in main.c and its memory leak
+
+	* Fixed output of -d argument when there is no event on the
+	specified day
+
+	* Added --mail argument
+
+	* Added creation of ~/.pal/pal.conf if it doesn't exist and -f
+	argument isn't used
+
+	* Easter related events now can be defined in calendar files
+	(instead of turning them on/off at compile time)
+
+	* Removed README file.  Information in README is now in INSTALL or
+	the man page.
+
+	* Show week before current week if calendar is more than 3 lines
+	long
+
+	* Made "today" on calendar bright white
+
+
+version 0.2.1 (5 Aug 2003)
+	* Updates in Makefile
+
+	* Added spec file for creation of rpms (not fully tested)
+
+	* Dates displayed with -r argument are now translated correctly
+
+	* Fixed deprecated glib function calls
+
+
+version 0.2.0 (31 Jul 2003)
+	* IMPORTANT: The format of pal.conf has changed slightly to allow
+	new customizations.  Now, the "file" keyword must precede any
+	calendar files that you want to load.
+
+	* Added support for week_start_monday in pal.conf to display
+	Monday as first day of the week
+
+	* Added support for date_fmt in pal.conf to specify the format of
+	the date displayed when using the -r argument
+
+	* Support for comments (beginning with '#') in pal.conf file
+
+	* Command line arguments are now case sensitive
+
+	* Better terminal type detection for color
+
+	* Removed unneeded colorization of blank spaces
+
+	* Added very basic internationalization support (gettext)
+
+	* Added install, uninstall and debug rules to Makefile
+
+	* Modified dist rule in Makefile to put all files into a pal
+	directory.  Unpacking the file now creates a pal directory.
+
+	* Fixed segmentation fault in optimized builds
+
+	* Dates displayed with -r argument are now just bold----not bold
+	and white
+
+
+version 0.1.1 (30 Jul 2003)
+	* Created ChangeLog
+
+	* Added color output feature (with crude checking of terminal type)
+
+	* Added ability to load a different pal.conf file
+
+	* Created separate file for output functions
+
+	* Several other small updates
+
+	* Added dist rule to Makefile
+
+
+version 0.1.0 (16 Jul 2003)
+	* Initial public release
+
