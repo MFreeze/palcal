@@ -182,7 +182,7 @@ static void pal_html_month(GDate* date, gboolean force_month_label,
 
     /* we are on the first day of the next month, go back to the last
      * day */
-    g_date_add_days(date, -1);
+    g_date_subtract_days(date, 1);
 
     /* skip to end of calendar */
     if(settings->week_start_monday)   /* set i to the number of blanks to print */
