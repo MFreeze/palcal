@@ -56,7 +56,7 @@ static void pal_remind_event(void)
     FILE* tmp_stream;
     int return_val;
     gchar* email_add;
-    G_CONST_RETURN gchar *charset;
+    const gchar *charset;
     at_string = g_malloc(1024*sizeof(gchar));
 
     pal_output_fg(BRIGHT, GREEN, "* * * ");

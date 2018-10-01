@@ -702,7 +702,7 @@ void pal_main_reload(void)
 
 int main(gint argc, gchar** argv)
 {
-    G_CONST_RETURN gchar *charset = NULL;
+    const gchar *charset = NULL;
     gint on_arg = 1;
     GDate* today = g_date_new();
 
