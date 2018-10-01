@@ -6,7 +6,7 @@
 prefix = /usr
 CC      = gcc
 
-PAL_VERSION = 0.4.3
+PAL_VERSION = 0.4.4
 
 # used for portage, rpm, ...
 DESTDIR =
